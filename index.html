@@ -18,8 +18,8 @@
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
-      background: #0a0a0f;
-      color: #f0ede8;
+      background: #1a1940;
+      color: #f5f5f5;
       line-height: 1.6;
     }
     img { max-width: 100%; display: block; }
@@ -27,38 +27,38 @@
 
     /* ===== COLOURS ===== */
     :root {
-      --gold: #c9a84c;
-      --gold-light: #e8c96a;
-      --dark: #0a0a0f;
-      --dark-2: #12121a;
-      --dark-3: #1a1a26;
-      --text: #f0ede8;
-      --text-muted: #9e9a94;
+      --orange: #d4451a;
+      --orange-light: #e8603a;
+      --dark: #141333;
+      --dark-2: #1a1940;
+      --dark-3: #22215c;
+      --text: #f5f5f5;
+      --text-muted: #b0aed4;
     }
 
     /* ===== NAV ===== */
     nav {
       position: fixed; top: 0; width: 100%; z-index: 100;
-      background: rgba(10,10,15,0.92);
+      background: rgba(20,19,51,0.95);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(201,168,76,0.15);
+      border-bottom: 1px solid rgba(212,69,26,0.2);
       padding: 1rem 2rem;
       display: flex; align-items: center; justify-content: space-between;
     }
     .nav-logo img { height: 40px; }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a { font-size: 0.9rem; font-weight: 500; letter-spacing: 0.04em; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--gold); }
+    .nav-links a:hover { color: var(--orange); }
     .nav-cta {
-      background: var(--gold);
-      color: #000;
+      background: var(--orange);
+      color: #fff;
       padding: 0.6rem 1.4rem;
       border-radius: 4px;
       font-weight: 600;
       font-size: 0.9rem;
       transition: background 0.2s;
     }
-    .nav-cta:hover { background: var(--gold-light); }
+    .nav-cta:hover { background: var(--orange-light); }
 
     /* ===== HERO ===== */
     #hero {
@@ -66,14 +66,14 @@
       display: flex; align-items: center; justify-content: center;
       text-align: center;
       padding: 8rem 2rem 4rem;
-      background: radial-gradient(ellipse at 50% 60%, rgba(201,168,76,0.08) 0%, transparent 70%);
+      background: radial-gradient(ellipse at 50% 60%, rgba(212,69,26,0.1) 0%, transparent 70%);
     }
     .hero-inner { max-width: 800px; }
     .hero-eyebrow {
       display: inline-block;
       font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em;
-      color: var(--gold); text-transform: uppercase;
-      border: 1px solid rgba(201,168,76,0.4);
+      color: var(--orange); text-transform: uppercase;
+      border: 1px solid rgba(212,69,26,0.5);
       padding: 0.4rem 1rem; border-radius: 2px;
       margin-bottom: 1.5rem;
     }
@@ -83,14 +83,14 @@
       line-height: 1.15;
       margin-bottom: 1.5rem;
     }
-    .hero-headline span { color: var(--gold); }
+    .hero-headline span { color: var(--orange); }
     .hero-sub {
       font-size: 1.15rem; color: var(--text-muted);
       max-width: 560px; margin: 0 auto 2.5rem;
     }
     .btn-primary {
-      background: var(--gold);
-      color: #000;
+      background: var(--orange);
+      color: #fff;
       padding: 0.9rem 2rem;
       border-radius: 4px;
       font-weight: 700;
@@ -98,14 +98,14 @@
       display: inline-block;
       transition: background 0.2s, transform 0.15s;
     }
-    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .btn-primary:hover { background: var(--orange-light); transform: translateY(-2px); }
 
     /* ===== SECTION BASICS ===== */
     section { padding: 6rem 2rem; }
     .container { max-width: 1100px; margin: 0 auto; }
     .section-eyebrow {
       font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em;
-      color: var(--gold); text-transform: uppercase;
+      color: var(--orange); text-transform: uppercase;
       margin-bottom: 0.75rem;
     }
     .section-title {
@@ -123,14 +123,14 @@
     }
     .pillar-card {
       background: var(--dark-3);
-      border: 1px solid rgba(201,168,76,0.12);
+      border: 1px solid rgba(212,69,26,0.2);
       border-radius: 8px;
       padding: 2rem;
       transition: border-color 0.2s;
     }
-    .pillar-card:hover { border-color: rgba(201,168,76,0.4); }
+    .pillar-card:hover { border-color: rgba(212,69,26,0.5); }
     .pillar-icon { font-size: 2rem; margin-bottom: 1rem; }
-    .pillar-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--gold); }
+    .pillar-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--orange); }
     .pillar-card p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; }
 
     /* ===== MASTERCLASSES ===== */
@@ -138,7 +138,7 @@
     .masterclass-section {
       background: var(--dark-2);
       border-radius: 12px;
-      border: 1px solid rgba(201,168,76,0.12);
+      border: 1px solid rgba(212,69,26,0.2);
       padding: 3rem;
       margin-top: 3rem;
     }
@@ -149,15 +149,15 @@
       padding: 0.3rem 0.8rem; border-radius: 2px;
       margin-bottom: 1rem;
     }
-    .badge-live { background: var(--gold); color: #000; }
-    .badge-soon { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+    .badge-live { background: var(--orange); color: #fff; }
+    .badge-soon { background: rgba(212,69,26,0.15); color: var(--orange); border: 1px solid rgba(212,69,26,0.35); }
     .masterclass-title { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 3vw, 2.2rem); margin-bottom: 1.5rem; }
     .masterclass-props { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
-    .prop-item h4 { color: var(--gold); font-size: 0.95rem; margin-bottom: 0.4rem; }
+    .prop-item h4 { color: var(--orange); font-size: 0.95rem; margin-bottom: 0.4rem; }
     .prop-item p { font-size: 0.9rem; color: var(--text-muted); }
     .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
-    .stat-card { text-align: center; padding: 1.5rem; background: var(--dark); border-radius: 6px; border: 1px solid rgba(201,168,76,0.1); }
-    .stat-number { font-size: 2rem; font-weight: 800; color: var(--gold); }
+    .stat-card { text-align: center; padding: 1.5rem; background: var(--dark); border-radius: 6px; border: 1px solid rgba(212,69,26,0.15); }
+    .stat-number { font-size: 2rem; font-weight: 800; color: var(--orange); }
     .stat-label { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.3rem; line-height: 1.4; }
 
     /* ===== TESTIMONIALS ===== */
@@ -165,13 +165,13 @@
     .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
     .testimonial-card {
       background: var(--dark-3);
-      border: 1px solid rgba(201,168,76,0.12);
+      border: 1px solid rgba(212,69,26,0.2);
       border-radius: 8px;
       padding: 2rem;
     }
     .testimonial-type {
       font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 1rem;
+      color: var(--orange); margin-bottom: 1rem;
     }
     .testimonial-quote { font-size: 1.1rem; font-style: italic; margin-bottom: 1.25rem; line-height: 1.6; }
     .testimonial-story { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem; line-height: 1.6; }
@@ -183,21 +183,21 @@
     .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem; }
     .blog-card {
       background: var(--dark-2);
-      border: 1px solid rgba(201,168,76,0.12);
+      border: 1px solid rgba(212,69,26,0.2);
       border-radius: 8px;
       padding: 2rem;
       transition: border-color 0.2s, transform 0.15s;
       cursor: pointer;
     }
-    .blog-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-3px); }
-    .blog-date { font-size: 0.8rem; color: var(--gold); margin-bottom: 0.75rem; }
+    .blog-card:hover { border-color: rgba(212,69,26,0.5); transform: translateY(-3px); }
+    .blog-date { font-size: 0.8rem; color: var(--orange); margin-bottom: 0.75rem; }
     .blog-title { font-weight: 700; font-size: 1rem; line-height: 1.4; }
 
     /* ===== CTA BANNER ===== */
     #cta-banner {
-      background: linear-gradient(135deg, rgba(201,168,76,0.12) 0%, rgba(201,168,76,0.04) 100%);
-      border-top: 1px solid rgba(201,168,76,0.2);
-      border-bottom: 1px solid rgba(201,168,76,0.2);
+      background: linear-gradient(135deg, rgba(212,69,26,0.12) 0%, rgba(46,45,122,0.3) 100%);
+      border-top: 1px solid rgba(212,69,26,0.25);
+      border-bottom: 1px solid rgba(212,69,26,0.25);
       text-align: center;
       padding: 5rem 2rem;
     }
@@ -207,17 +207,17 @@
     /* ===== FOOTER ===== */
     footer {
       background: var(--dark-2);
-      border-top: 1px solid rgba(201,168,76,0.1);
+      border-top: 1px solid rgba(212,69,26,0.15);
       padding: 4rem 2rem 2rem;
     }
     .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; max-width: 1100px; margin: 0 auto 3rem; }
     .footer-brand img { height: 36px; margin-bottom: 1rem; }
     .footer-brand p { font-size: 0.9rem; color: var(--text-muted); max-width: 240px; line-height: 1.6; }
-    .footer-col h4 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 1rem; }
+    .footer-col h4 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--orange); margin-bottom: 1rem; }
     .footer-col ul { list-style: none; }
     .footer-col ul li { margin-bottom: 0.6rem; }
     .footer-col ul li a { font-size: 0.9rem; color: var(--text-muted); transition: color 0.2s; }
-    .footer-col ul li a:hover { color: var(--gold); }
+    .footer-col ul li a:hover { color: var(--orange); }
     .footer-contact p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem; }
     .footer-bottom {
       max-width: 1100px; margin: 0 auto;
@@ -308,7 +308,7 @@
             <p>Networking with confidence and clarity can turn conversations into opportunities.</p>
           </div>
         </div>
-        <p style="color: var(--text-muted); font-style: italic; border-left: 3px solid var(--gold); padding-left: 1rem; margin-bottom: 2rem;">
+        <p style="color: var(--text-muted); font-style: italic; border-left: 3px solid var(--orange); padding-left: 1rem; margin-bottom: 2rem;">
           "Authenticity is the key to successful networking. A thriving network requires consistent engagement. Follow up, offer value, and nurture relationships to turn initial conversations into long-term professional alliances."
         </p>
         <div class="stats-grid">
@@ -413,7 +413,7 @@
       -->
       <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem; align-items: start;">
         <div>
-          <img src="assets/images/darshika-headshot.jpg" alt="Darshika Patel" style="border-radius: 8px; border: 2px solid rgba(201,168,76,0.2);" />
+          <img src="assets/images/darshika-headshot.jpg" alt="Darshika Patel" style="border-radius: 8px; border: 2px solid rgba(212,69,26,0.3);" />
         </div>
         <div>
           <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem;">
@@ -526,7 +526,7 @@
       <p>Be the first to know when new masterclasses go live.</p>
       <form style="display:flex; gap:1rem; max-width:440px; margin: 0 auto;" onsubmit="return false;">
         <input type="email" placeholder="Your email address"
-          style="flex:1; background: var(--dark-2); border: 1px solid rgba(201,168,76,0.3); color: var(--text); padding: 0.75rem 1rem; border-radius:4px; font-size:0.95rem;" />
+          style="flex:1; background: var(--dark-2); border: 1px solid rgba(212,69,26,0.3); color: var(--text); padding: 0.75rem 1rem; border-radius:4px; font-size:0.95rem;" />
         <button type="submit" class="btn-primary" style="border:none; cursor:pointer;">Subscribe</button>
       </form>
     </div>
@@ -540,17 +540,17 @@
       <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 2rem;">
         <div>
           <p style="color: var(--text-muted); margin-bottom: 2rem;">Proud to be based in the heart of London.</p>
-          <p style="margin-bottom: 0.75rem;"><strong style="color:var(--gold);">Email:</strong> <a href="mailto:hello@drshika.org">hello@drshika.org</a></p>
-          <p style="margin-bottom: 0.75rem;"><strong style="color:var(--gold);">Phone:</strong> +44 (0)7 555-551 234</p>
-          <p style="margin-bottom: 0.75rem;"><strong style="color:var(--gold);">TikTok:</strong> <a href="https://www.tiktok.com/@drshikacademy" target="_blank">@drshikacademy</a></p>
+          <p style="margin-bottom: 0.75rem;"><strong style="color:var(--orange);">Email:</strong> <a href="mailto:hello@drshika.org">hello@drshika.org</a></p>
+          <p style="margin-bottom: 0.75rem;"><strong style="color:var(--orange);">Phone:</strong> +44 (0)7 555-551 234</p>
+          <p style="margin-bottom: 0.75rem;"><strong style="color:var(--orange);">TikTok:</strong> <a href="https://www.tiktok.com/@drshikacademy" target="_blank">@drshikacademy</a></p>
         </div>
         <form onsubmit="return false;" style="display:flex; flex-direction:column; gap:1rem;">
           <input type="text" placeholder="Your name"
-            style="background: var(--dark); border: 1px solid rgba(201,168,76,0.2); color: var(--text); padding: 0.75rem 1rem; border-radius:4px;" />
+            style="background: var(--dark); border: 1px solid rgba(212,69,26,0.25); color: var(--text); padding: 0.75rem 1rem; border-radius:4px;" />
           <input type="email" placeholder="Your email"
-            style="background: var(--dark); border: 1px solid rgba(201,168,76,0.2); color: var(--text); padding: 0.75rem 1rem; border-radius:4px;" />
+            style="background: var(--dark); border: 1px solid rgba(212,69,26,0.25); color: var(--text); padding: 0.75rem 1rem; border-radius:4px;" />
           <textarea rows="5" placeholder="Your message"
-            style="background: var(--dark); border: 1px solid rgba(201,168,76,0.2); color: var(--text); padding: 0.75rem 1rem; border-radius:4px; resize:vertical;"></textarea>
+            style="background: var(--dark); border: 1px solid rgba(212,69,26,0.25); color: var(--text); padding: 0.75rem 1rem; border-radius:4px; resize:vertical;"></textarea>
           <button type="submit" class="btn-primary" style="border:none; cursor:pointer; align-self:flex-start;">Send Message</button>
         </form>
       </div>
