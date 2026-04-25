@@ -115,6 +115,60 @@
     }
     .section-sub { color: var(--text-muted); max-width: 560px; }
 
+    /* ===== VIP / CAR / CPR FRAMEWORK ===== */
+    .framework-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .framework-card {
+      background: var(--dark);
+      border: 1px solid rgba(212,69,26,0.25);
+      border-radius: 8px;
+      padding: 1.75rem;
+    }
+    .framework-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--orange);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .framework-word {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.5rem;
+    }
+    .framework-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .framework-label {
+      display: inline-block;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--orange);
+      border: 1px solid rgba(212,69,26,0.4);
+      padding: 0.25rem 0.7rem; border-radius: 2px;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ===== MOBILE FIX ===== */
+    @media (max-width: 600px) {
+      section { padding: 4rem 1.25rem; }
+      .masterclass-section { padding: 2rem 1.25rem; }
+      .framework-grid { grid-template-columns: 1fr; }
+      .masterclass-props { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      #contact > .container > div,
+      #about > .container > div { grid-template-columns: 1fr !important; }
+      .nav-links { display: none; }
+    }
+
     /* ===== THREE PILLARS ===== */
     #pillars { background: var(--dark-2); }
     .pillars-grid {
@@ -293,26 +347,76 @@
       <!-- NETWORKING (LIVE) -->
       <div class="masterclass-section">
         <div class="badge badge-live">Available Now</div>
-        <h3 class="masterclass-title">Networking Masterclass — Boost Your Confidence</h3>
-        <div class="masterclass-props">
-          <div class="prop-item">
-            <h4>Lead with Value</h4>
-            <p>Show up with impact, stand out in every room, and create relationships that accelerate your success.</p>
+        <h3 class="masterclass-title">Networking Masterclass — The Career Accelerator</h3>
+        <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2.5rem; max-width: 640px;">
+          Need help creating opportunities for yourself? Whether you're building your network for the first time or looking to unlock the next level — this is where it starts.
+        </p>
+
+        <!-- Level 1: VIP -->
+        <div class="framework-label">Level 1 — V.I.P</div>
+        <div class="framework-grid">
+          <div class="framework-card">
+            <div class="framework-letter">V</div>
+            <div class="framework-word">Value</div>
+            <div class="framework-desc">Discover your Value — show up with impact and stand out in every room.</div>
           </div>
-          <div class="prop-item">
-            <h4>Connect Authentically</h4>
-            <p>From Insight to Impact – The Leadership Edge You Need to connect authentically.</p>
+          <div class="framework-card">
+            <div class="framework-letter">I</div>
+            <div class="framework-word">Intention</div>
+            <div class="framework-desc">Clarify your Intention — know exactly what you want from every connection.</div>
           </div>
-          <div class="prop-item">
-            <h4>Attract a Strong Network</h4>
-            <p>Networking with confidence and clarity can turn conversations into opportunities.</p>
+          <div class="framework-card">
+            <div class="framework-letter">P</div>
+            <div class="framework-word">Presence</div>
+            <div class="framework-desc">Lead with Presence — be the person others remember and want to work with.</div>
           </div>
         </div>
-        <p style="color: var(--text-muted); font-style: italic; border-left: 3px solid var(--orange); padding-left: 1rem; margin-bottom: 2rem;">
+
+        <!-- Level 2: CAR -->
+        <div class="framework-label" style="margin-top: 2rem;">Level 2 — C.A.R</div>
+        <div class="framework-grid">
+          <div class="framework-card">
+            <div class="framework-letter">C</div>
+            <div class="framework-word">Connect</div>
+            <div class="framework-desc">Connect with energy — make a powerful first impression that opens doors.</div>
+          </div>
+          <div class="framework-card">
+            <div class="framework-letter">A</div>
+            <div class="framework-word">Align</div>
+            <div class="framework-desc">Align with values — build relationships rooted in shared purpose and trust.</div>
+          </div>
+          <div class="framework-card">
+            <div class="framework-letter">R</div>
+            <div class="framework-word">Reconnect</div>
+            <div class="framework-desc">Reconnect with purpose — nurture your network and keep momentum alive.</div>
+          </div>
+        </div>
+
+        <!-- Level 3: CPR -->
+        <div class="framework-label" style="margin-top: 2rem;">Level 3 — C.P.R</div>
+        <div class="framework-grid">
+          <div class="framework-card">
+            <div class="framework-letter">C</div>
+            <div class="framework-word">Curiosity</div>
+            <div class="framework-desc">Approach every opportunity with genuine curiosity — the right questions unlock the right rooms.</div>
+          </div>
+          <div class="framework-card">
+            <div class="framework-letter">P</div>
+            <div class="framework-word">Purpose</div>
+            <div class="framework-desc">Lead with purpose — know why you're in the room and what problem you solve.</div>
+          </div>
+          <div class="framework-card">
+            <div class="framework-letter">R</div>
+            <div class="framework-word">Readiness</div>
+            <div class="framework-desc">Readiness separates those who spot an opportunity from those who can act on it.</div>
+          </div>
+        </div>
+
+        <p style="color: var(--text-muted); font-style: italic; border-left: 3px solid var(--orange); padding-left: 1rem; margin: 2rem 0;">
           "Authenticity is the key to successful networking. A thriving network requires consistent engagement. Follow up, offer value, and nurture relationships to turn initial conversations into long-term professional alliances."
         </p>
         <div class="stats-grid">
-          <div class="stat-card"><div class="stat-number">70%</div><div class="stat-label">SMEs say networking is crucial for new clients & contracts</div></div>
+          <div class="stat-card"><div class="stat-number">70%</div><div class="stat-label">SMEs say networking is crucial for new clients &amp; contracts</div></div>
           <div class="stat-card"><div class="stat-number">75%</div><div class="stat-label">of professionals say networking is beneficial</div></div>
           <div class="stat-card"><div class="stat-number">450K</div><div class="stat-label">average number of business networking events in the UK</div></div>
           <div class="stat-card"><div class="stat-number">80%</div><div class="stat-label">of finance professionals attend industry networking events</div></div>
@@ -429,15 +533,27 @@
               </div>
             </div>
             <div style="display:flex; gap: 1rem; align-items:center;">
-              <img src="assets/images/darshika-google.jpg" alt="Head of Google UK/Ireland" style="width:80px; height:80px; object-fit:cover; border-radius:6px;" />
+              <img src="assets/images/darshika-teaching.jpg" alt="Workshop Facilitator" style="width:80px; height:80px; object-fit:cover; border-radius:6px;" />
               <div>
-                <div style="font-weight:700; font-size:0.9rem;">Connected with Head of Google UK/Ireland</div>
+                <div style="font-weight:700; font-size:0.9rem;">Master British Certified Trainer</div>
               </div>
             </div>
             <div style="display:flex; gap: 1rem; align-items:center;">
-              <img src="assets/images/darshika-teaching.jpg" alt="Teaching" style="width:80px; height:80px; object-fit:cover; border-radius:6px;" />
+              <img src="assets/images/darshika-certificate.jpg" alt="Senior Executive" style="width:80px; height:80px; object-fit:cover; border-radius:6px;" />
               <div>
-                <div style="font-weight:700; font-size:0.9rem;">Workshop Facilitator & Trainer</div>
+                <div style="font-weight:700; font-size:0.9rem;">Senior Executive — ex COO, CRO, DPO, ISO</div>
+              </div>
+            </div>
+            <div style="display:flex; gap: 1rem; align-items:center;">
+              <img src="assets/images/IMG-20260323-WA0019.jpg" alt="Oxford Executive Leadership Programme" style="width:80px; height:80px; object-fit:cover; border-radius:6px;" />
+              <div>
+                <div style="font-weight:700; font-size:0.9rem;">Oxford Executive Leadership Programme</div>
+              </div>
+            </div>
+            <div style="display:flex; gap: 1rem; align-items:center;">
+              <div style="width:80px; height:80px; background:var(--dark-3); border-radius:6px; border:1px solid rgba(212,69,26,0.25); display:flex; align-items:center; justify-content:center; font-size:1.5rem; flex-shrink:0;">✓</div>
+              <div>
+                <div style="font-weight:700; font-size:0.9rem;">Enhanced DBS Checked</div>
               </div>
             </div>
           </div>

@@ -50,10 +50,11 @@ Darshika is the founder and lead coach. Key credentials and experience:
 
 **Key roles/achievements to highlight on About page:**
 - Built and led DrShika Academy from scratch
-- Connected with Head of Google UK/Ireland
+- Master British Certified Trainer
+- Senior Executive — ex COO, CRO, DPO, ISO
+- Enhanced DBS Checked
+- Oxford Executive Leadership Programme
 - Digital Secretary (government/professional role)
-- Attended Oxford Executive Leadership Programme
-- Involved with Northwood College
 - Nominated Leader of the Year 2025
 - Workshop facilitator / teacher (Blake's class and others)
 
